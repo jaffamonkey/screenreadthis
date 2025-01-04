@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="./favicon.png" />
+		<meta name="viewport" content="width=device-width" />
+		<meta http-equiv="content-security-policy" content=""><title>Screenread this!</title><meta name="description" content="Basic web accessibility testing should be possible without the need of installing screenreader software and without the need of learning the different keyboard shortcuts first." data-svelte="svelte-12e20yu"><!-- HTML_TAG_START --><style>pre code.hljs{display:block;overflow-x:auto;padding:1em}code.hljs{padding:3px 5px}/*!
+  Theme: GitHub
+  Description: Light theme as seen on github.com
+  Author: github.com
+  Maintainer: @Hirse
+  Updated: 2021-05-15
+
+  Outdated base version: https://github.com/primer/github-syntax-light
+  Current colors taken from GitHub's CSS
+*/.hljs{color:#24292e;background:#fff}.hljs-doctag,.hljs-keyword,.hljs-meta .hljs-keyword,.hljs-template-tag,.hljs-template-variable,.hljs-type,.hljs-variable.language_{color:#d73a49}.hljs-title,.hljs-title.class_,.hljs-title.class_.inherited__,.hljs-title.function_{color:#6f42c1}.hljs-attr,.hljs-attribute,.hljs-literal,.hljs-meta,.hljs-number,.hljs-operator,.hljs-selector-attr,.hljs-selector-class,.hljs-selector-id,.hljs-variable{color:#005cc5}.hljs-meta .hljs-string,.hljs-regexp,.hljs-string{color:#032f62}.hljs-built_in,.hljs-symbol{color:#e36209}.hljs-code,.hljs-comment,.hljs-formula{color:#6a737d}.hljs-name,.hljs-quote,.hljs-selector-pseudo,.hljs-selector-tag{color:#22863a}.hljs-subst{color:#24292e}.hljs-section{color:#005cc5;font-weight:700}.hljs-bullet{color:#735c0f}.hljs-emphasis{color:#24292e;font-style:italic}.hljs-strong{color:#24292e;font-weight:700}.hljs-addition{color:#22863a;background-color:#f0fff4}.hljs-deletion{color:#b31d28;background-color:#ffeef0}</style><!-- HTML_TAG_END -->
+	<link href="./_app/immutable/assets/_layout-40b0a7c0.css" rel="stylesheet">
+	<link href="./_app/immutable/assets/_page-52b744ff.css" rel="stylesheet">
+	<link href="./_app/immutable/assets/github-548b5b0d.css" rel="stylesheet">
+	<link rel="modulepreload" href="./_app/immutable/start-aef9781b.js">
+	<link rel="modulepreload" href="./_app/immutable/chunks/index-8ee7784d.js">
+	<link rel="modulepreload" href="./_app/immutable/chunks/singletons-bfaa217e.js">
+	<link rel="modulepreload" href="./_app/immutable/chunks/index-09dcd3e2.js">
+	<link rel="modulepreload" href="./_app/immutable/components/pages/_layout.svelte-50c40d4d.js">
+	<link rel="modulepreload" href="./_app/immutable/chunks/stores-af6d2a7e.js">
+	<link rel="modulepreload" href="./_app/immutable/components/pages/_page.svelte-10f6f7bb.js">
+	<link rel="modulepreload" href="./_app/immutable/chunks/github-bff1350e.js">
+	<link rel="modulepreload" href="./_app/immutable/modules/pages/_page.ts-e9fa0128.js">
+	<link rel="modulepreload" href="./_app/immutable/chunks/_page-802cc2a3.js">
+	</head>
+	<body>
+		<div>
+
+
+<header class="svelte-vjx8v2"><div class="corner svelte-vjx8v2"></div>
+
+	<nav data-sveltekit-prefetch class="svelte-vjx8v2"><svg viewBox="0 0 2 3" aria-hidden="true" class="svelte-vjx8v2"><path d="M0,0 L1,2 C1.5,3 1.5,3 2,3 L2,0 Z" class="svelte-vjx8v2"></path></svg>
+		<ul class="svelte-vjx8v2"><li class="svelte-vjx8v2 active"><a href="/" class="svelte-vjx8v2">Home</a></li>
+			<li class="svelte-vjx8v2"><a href="/about" class="svelte-vjx8v2">About</a></li></ul>
+		<svg viewBox="0 0 2 3" aria-hidden="true" class="svelte-vjx8v2"><path d="M0,0 L0,3 C0.5,3 0.5,3 1,2 L2,0 Z" class="svelte-vjx8v2"></path></svg></nav>
+
+	<div class="corner svelte-vjx8v2"></div>
+</header>
+
+<main class="svelte-142u51d">
+
+
+
+<section class="svelte-frd81h"><h1 class="svelte-frd81h">ScreenreadThis!</h1>
+	<div class="intro svelte-frd81h"><p class="svelte-frd81h">Experimental project which tries to find easier ways of learning about screenreader testing -
+			without the need of learning all screenreader operation shortcuts first. No more excuses!
+		</p>
+
+		Install and use ScreenreadThis! locally:
+
+		
+  
+  <pre data-language="bash" class=" svelte-4cqgwq"><code class="hljs"><!-- HTML_TAG_START -->git <span class="hljs-built_in">clone</span> https://github.com/mandrasch/screenreadthis.git
+<span class="hljs-built_in">cd</span> screenreadthis/
+npm install
+npm run dev -- --open<!-- HTML_TAG_END --></code></pre>
+
+
+		<p class="svelte-frd81h">Built with SvelteKit and puppeteer retrieving the <a href="https://pptr.dev/api/puppeteer.accessibility.snapshot/">accessibility tree snapshot</a>.
+		</p></div>
+
+	<h2 style="font-size:1.8rem;font-weight:normal; text-align:center;" class="svelte-frd81h">Online demo</h2>
+
+	<p style="max-width:750px;align-self:center;text-align:left;" class="svelte-frd81h">This demo currently runs on a free render.com tier and can be unavailable from time to time.
+		If this demo currently doesn&#39;t work, here is a <a href="https://www.youtube.com/watch?v=svpjpAsGThU">demo video (YouTube)</a>
+		or you can
+		<a href="#">load a static demo example</a>.
+	</p>
+
+
+	<form class="svelte-frd81h"><label for="requestedUrl" class="svelte-frd81h">URL:</label>
+		<input required id="requestedUrl" placeholder="https://" type="url" class="svelte-frd81h" value="https://www.smashingmagazine.com/2021/09/simplifying-form-styles-accent-color/">
+		<div class="formField svelte-frd81h" style="display:flex;flex-direction:row;width:100%;"><input type="checkbox" style="flex-basis:2rem;width:2rem;" id="dataSubmissionTermsAcceptedCheckbox" class="svelte-frd81h">
+			<label for="dataSubmissionTermsAcceptedCheckbox" style="margin-left:10px;font-size:0.9rem; text-align:left;flex: 1 1 100%;" class="svelte-frd81h">By submitting you accept that your browser connects to a render.com cloud server instance
+				(server region: Frankfurt / Germany) and transmits the given URL in order to receive the
+				accessibility tree result. See <a href="https://render.com/privacy">render.com/privacy</a> for
+				all information.</label></div>
+		<div class="submitButtons svelte-frd81h"><button type="submit"  class="svelte-frd81h">Screenread this!</button>
+			</div></form>
+
+	
+
+	<div id="result">
+		
+		<div class="navigateTheTreeContainer svelte-frd81h"><h2 class="svelte-frd81h">Screenread the page elements</h2>
+			<div class="navigateTheTreeContainer__buttons svelte-frd81h"><button disabled class="svelte-frd81h">« Read prev</button>
+				<button disabled class="svelte-frd81h">Read next »</button></div>
+			<p class="svelte-frd81h"><small>Hint: You can also use the keyboard arrow keys.</small></p></div>
+		<div class="speechOutputContainer svelte-frd81h"><h2 class="svelte-frd81h">Current element</h2>
+			
+
+			<p style="margin-top:30px;margin-bottom:0;" class="svelte-frd81h"><small>Please note: The speech output is generated by the browser via WebSpeech API. A real
+					screenreader software would read this differently. This speech output is just meant for
+					demonstrational purposes of the accessibility tree, not for serious accessibility testing.</small></p></div>
+		<div class="jsonTreeContainer svelte-frd81h"><h2 class="svelte-frd81h">Full accessibility tree snapshot (via Puppeteer)</h2>
+
+			<ul class="svelte-16cw61f"><span class="root svelte-19drypg"><span class="container svelte-1qd6nto"><span class="arrow svelte-1qd6nto expanded">▶</span></span>
+    <span class="operator">{</span>
+
+
+<span class="operator">}</span>
+  </span>
+
+  <ul></ul>
+</ul>
+			<p class="svelte-frd81h"><small>The property &#39;htmlLangAttribute&#39; is not part of the accessibility tree, it&#39;s a custom
+					addition by API server.</small></p></div>
+		</div>
+</section></main>
+
+<footer class="svelte-142u51d"><hr style="width:30px;border:1px solid #999;">
+	<p><small>Disclaimer: This is not a real screenreader software, only use real screenreaders for serious
+			testing!</small></p>
+	<p>Source code: <a href="https://github.com/mandrasch/screenreadthis" aria-label="Read more about this on the Github repository page" class="svelte-142u51d">GitHub</a>
+		(Open Source) | <a href="/about" class="svelte-142u51d">About</a> |
+		<a href="https://github.com/mandrasch/screenreadthis#privacy-and-imprint" class="svelte-142u51d">Privacy / Imprint</a></p>
+</footer>
+
+
+		<script type="module" data-sveltekit-hydrate="63bvwu">
+		import { start } from "./_app/immutable/start-aef9781b.js";
+
+		start({
+			env: {},
+			hydrate: {
+				status: 200,
+				error: null,
+				node_ids: [0, 2],
+				params: {},
+				routeId: "",
+				data: (function(a){return [a,a]}(null)),
+				form: null
+			},
+			paths: {"base":"","assets":""},
+			target: document.querySelector('[data-sveltekit-hydrate="63bvwu"]').parentNode,
+			trailing_slash: "never"
+		});
+	</script>
+	</div>
+	</body>
+</html>
